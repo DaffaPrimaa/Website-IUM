@@ -1,3 +1,12 @@
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+    navLinks.style.right = "0";
+}
+function hideMenu(){
+    navLinks.style.right = "-150px";
+}
+
 const programData = {
   1: [
     { img: "/images/subuh.jpg", title: "Sholat Subuh", date: "Setiap waktu sholat subuh" },
