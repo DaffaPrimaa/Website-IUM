@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Panti Asuhan Taman Harapan Muhammadiyah</title>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   </head>
   <body>
     <header>
@@ -13,12 +14,16 @@
         <div class="logo">
           <img src="images/logopanti.jpg" alt="Logo Muhammadiyah" />
         </div>
-        <ul class="nav-links">
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#tentangkami">Tentang Kami</a></li>
-          <li><a href="#program">Program</a></li>
-          <li><a href="#kontak">Platform Sosial</a></li>
-        </ul>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#tentangkami">Tentang Kami</a></li>
+            <li><a href="#program">Program</a></li>
+            <li><a href="#kontak">Platform Sosial</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-solid fa-bars" onclick="showMenu()"></i>
         <div class="right-logo">
           <img
             class="logo1"
@@ -61,33 +66,12 @@
       </div>
       <div class="about-content">
         <h2>Tentang kami</h2>
-        <p>
-          Assalamu’alaikum warahmatullahi wabarakatuh Segala puji bagi Allah
-          SWT, Tuhan semesta alam, yang telah melimpahkan rahmat dan karunia-Nya
-          kepada kita semua. Shalawat serta salam semoga senantiasa tercurah
-          kepada junjungan kita Nabi Muhammad SAW, beserta keluarga, sahabat,
-          dan seluruh umatnya yang setia hingga akhir zaman. Dengan rasa syukur
-          dan bangga, kami menyambut kehadiran Anda di website resmi Panti
-          Asuhan Taman Harapan Muhammadiyah. Website ini kami hadirkan sebagai
-          sarana informasi dan komunikasi kepada masyarakat luas, agar dapat
-          mengenal lebih dekat keberadaan serta aktivitas yang kami lakukan
-          dalam membina, mendidik, dan mengasuh anak-anak yatim, piatu, dan
-          dhuafa. Sejak berdiri pada tahun 1935, Panti Asuhan Taman Harapan
-          Muhammadiyah telah menjadi rumah bagi banyak anak bangsa yang
-          membutuhkan perhatian dan kasih sayang. Dengan berlandaskan
-          nilai-nilai keislaman dan semangat kemanusiaan, kami berupaya
-          memberikan pengasuhan, pembinaan karakter, serta pendampingan yang
-          terbaik agar mereka tumbuh menjadi pribadi yang mandiri, berakhlak
-          mulia, dan bermanfaat bagi masyarakat. Kami menyadari bahwa perjalanan
-          ini tidak akan mungkin terwujud tanpa dukungan berbagai pihak. Untuk
-          itu, kami mengajak seluruh elemen masyarakat, donatur, dan relawan
-          untuk terus bersinergi dalam menebar kebaikan dan harapan bagi masa
-          depan generasi penerus bangsa. Akhir kata, kami ucapkan terima kasih
-          atas kunjungan Anda ke website ini. Semoga informasi yang tersaji
-          dapat memberikan manfaat dan membuka jalan bagi kolaborasi yang penuh
-          keberkahan. Wassalamu’alaikum warahmatullahi wabarakatuh KEPALA PANTI
-          Agus Sibni
-        </p>
+        <p>Assalamu’alaikum warahmatullahi wabarakatuh. Segala puji bagi Allah SWT, Tuhan semesta alam, yang telah melimpahkan rahmat dan karunia-Nya kepada kita semua. Shalawat serta salam semoga senantiasa tercurah kepada junjungan kita Nabi Muhammad SAW, beserta keluarga, sahabat, dan seluruh umatnya yang setia hingga akhir zaman. </p>
+            <p>Dengan rasa syukur dan bangga, kami menyambut kehadiran Anda di website resmi Panti Asuhan Taman Harapan Muhammadiyah. Website ini kami hadirkan sebagai sarana informasi dan komunikasi kepada masyarakat luas, agar dapat mengenal lebih dekat keberadaan serta aktivitas yang kami lakukan dalam membina, mendidik, dan mengasuh anak-anak yatim, piatu, dan dhuafa.</p>
+            <p>Sejak berdiri pada tahun 1935, Panti Asuhan Taman Harapan Muhammadiyah telah menjadi rumah bagi banyak anak bangsa yang membutuhkan perhatian dan kasih sayang. Dengan berlandaskan nilai-nilai keislaman dan semangat kemanusiaan, kami berupaya memberikan pengasuhan, pembinaan karakter, serta pendampingan yang terbaik agar mereka tumbuh menjadi pribadi yang mandiri, berakhlak mulia, dan bermanfaat bagi masyarakat.</p>
+            <p>Kami menyadari bahwa perjalanan ini tidak akan mungkin terwujud tanpa dukungan berbagai pihak. Untuk itu, kami mengajak seluruh elemen masyarakat, donatur, dan relawan untuk terus bersinergi dalam menebar kebaikan dan harapan bagi masa depan generasi penerus bangsa.</p>
+            <p>Akhir kata, kami ucapkan terima kasih atas kunjungan Anda ke website ini. Semoga informasi yang tersaji dapat memberikan manfaat dan membuka jalan bagi kolaborasi yang penuh keberkahan. Wassalamu’alaikum warahmatullahi wabarakatuh.</p>
+            <p>KEPALA PANTI <br><strong>Agus Sibni</strong></p>
         <div class="stats">
           <p>Jumlah anak saat ini:</p>
           <p>Anak Santriwan: 35 Orang</p>
@@ -172,7 +156,6 @@
 
       <div
         class="pagination-container"
-        style="display: flex; align-items: center; gap: 15px"
       >
         <div class="pagination">
           <div class="pagination">
